@@ -76,6 +76,7 @@ class _PCHomePageState extends State<PCHomePage> {
             hoverColor: Colors.transparent,
             highlightColor: Colors.transparent,
             onTap: () {
+              songOperator(-1);
               assetsAudioPlayer.playlistPlayAtIndex(index);
               setState(() {
                 isPlaying = true;
